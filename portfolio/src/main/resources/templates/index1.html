@@ -1,0 +1,671 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>YOORA KWON's PORTFOLIO</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+	<div id="colorlib-page">
+		<div class="container-wrap">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+			<div class="text-center">
+				<div class="author-img" style="background-image: url(images/yr.jpg);"></div>
+				<h1 id="colorlib-logo"><a href="index.html">YOORA KWON</a></h1>
+				<span class="position"><a href="#">Back-end Developer</a> in Korea</span>
+			</div>
+			<nav id="colorlib-main-menu" role="navigation" class="navbar">
+				<div id="navbar" class="collapse">
+					<ul>
+						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
+						<li><a href="#" data-nav-section="about">About</a></li>
+						<li><a href="#" data-nav-section="services">Services</a></li>
+						<li><a href="#" data-nav-section="skills">Skills</a></li>
+						<li><a href="#" data-nav-section="education">Education</a></li>
+						<li><a href="#" data-nav-section="project">Projects</a></li>
+						<li><a href="#" data-nav-section="contact">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<div class="colorlib-footer">
+				<p><small>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright <script>document.write(new Date().getFullYear());</script> All rights reserved. Made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></small>
+				<ul>
+					<li><a href="https://www.linkedin.com/in/yoora-kwon-36ab64141/"><i class="icon-linkedin2"></i></a></li>
+				</ul>
+			</div>
+		</aside>
+
+		<div id="colorlib-main">
+			<section id="colorlib-hero" class="js-fullheight" data-section="home">
+				<div class="flexslider js-fullheight">
+					<ul class="slides">
+				   	<li style="background-image: url(images/ny.JPG);">
+				   		<div class="overlay"></div>
+				   		<div class="container-fluid">
+				   			<div class="row">
+					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+					   				<div class="slider-text-inner js-fullheight">
+					   					<div class="desc">
+						   					<h1  style="color:#FFFFFF;">Welcome To<br>YOORA's Portfolio</h1>
+						   					<h2 style="color:#FFFFFF;"><span style="font-weight:bold; color:#FFA7A7;">권유라의 포트폴리오</span> 방문을 환영합니다. </h2>
+												<p th:onClick="download()"><a class="btn btn-primary btn-learn" style="border: solid 1px #FFFFFF; color:#FFFFFF;">Download CV <i class="icon-download4"></i></a></p>
+											</div>
+					   				</div>
+					   			</div>
+					   		</div>
+				   		</div>
+				   	</li>
+				   	<li style="background-image: url(images/back.jpg);">
+				   		<div class="overlay"></div>
+				   		<div class="container-fluid">
+				   			<div class="row">
+					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+					   				<div class="slider-text-inner">
+					   					<div class="desc">
+						   					<h1>Back-end Developer<br>with Projects</h1>
+												<h2>using Spring Framework, Spring Boot, <br>Java, JSP, Oracle DB, Maria DB, ect.</h2>
+												<p><a class="btn btn-primary btn-learn" href="#contact">Offer Position <i class="icon-mail"></i></a></p>
+											</div>
+					   				</div>
+					   			</div>
+					   		</div>
+				   		</div>
+				   	</li>
+				  	</ul>
+			  	</div>
+			</section>
+
+			<section class="colorlib-about" data-section="about">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="col-md-12">
+									<div class="about-desc">
+										<span class="heading-meta">About Me</span>
+										<h2 style="font-family:  'Quicksand', Arial, sans-serif; ">Who is YOORA KWON?</h2>
+										<p><strong style="color:#F15F5F;"> 안녕하세요 :) 사람을 좋아하는 신입 백엔드 개발자 권유라입니다.</strong>
+											<br>쌍용교육센터(강남) Full Stack 개발자 과정을 통해 웹개발 세계에 발을 들였습니다.
+											<br>6개월 교육 과정동안 조장역할로 <strong>4개의 미니프로젝트와 1개의 최종프로젝트</strong>를 완성하였으며, 
+											<br><strong>Java, JSP, Javascript, Jquery, Ajax, Json, Thymeleaf</strong> 등 다수의 개발언어 활용, <strong>ORACLE DB 및 MARIA DB</strong> 와 같은 여러 데이터베이스, 
+											<br>그리고 <strong>MVC 모델1, MVC 모델2, SPRING, SPRING BOOT</strong> 등의 설계패턴 및 프레임워크를 다양하게 경험하였습니다.
+											<br>
+											<br>긍정적인 에너지와 여러개의 프로젝트를 통해 쌓은 실무 지식으로 함께 일하고 싶은 팀원이 되겠습니다.</p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
+									<div class="services color-1">
+										<span class="icon2"><i class="icon-bulb"></i></span>
+										<h3>Java Programming</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+									<div class="services color-2">
+										<span class="icon2"><i class="icon-data"></i></span>
+										<h3>Database Programming</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
+									<div class="services color-3">
+										<span class="icon2"><i class="icon-globe-outline"></i></span>
+										<h3>Spring Framework</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
+									<div class="services color-4">
+										<span class="icon2"><i class="icon-note"></i></span>
+										<h3>Javascript</h3>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+									<div class="hire">
+										<h2 style="font-family: 'Quicksand', Arial, sans-serif; font-size:20px;">쌍용교육센터 Java기반 스마트 플랫폼 Full-Stack SW개발자 양성과정 중 다수의 프로젝트로 우수훈련생 수상</h2>
+										<a href="#contact" class="btn-hire">연락하기</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			
+			<section class="colorlib-services" data-section="services">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">What I Can Do?</span>
+							<h2 style="font-family:  'Quicksand', Arial, sans-serif; ">The Scope of Works for The Projects</h2>
+						</div>
+					</div>
+					<div class="row row-pt-md">
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-1">
+								<span class="icon">
+									<i class="icon-bulb"></i>
+								</span>
+								<div class="desc">
+									<h3>Java Programming</h3>
+									<p style="padding:0px; margin:0px;">기본문법, 연산자, 제어문, class, JCF(Collection, List,Set, Map), 
+										Exception Handling, IOStream 등 각 버전별 제공 문법 사용가능</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-2">
+								<span class="icon">
+									<i class="icon-data"></i>
+								</span>
+								<div class="desc">
+									<h3>Spring MVC</h3>
+									<p style="padding:0px; margin:0px;">MVC 모델2 기반의 스프링 프레임워크 활용 <br>Dispatcherservlet, annotation 등 활용 경험<br>Maven, Gradle(Boot 환경) 모두 경험 </p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-3">
+								<span class="icon">
+									<i class="icon-phone3"></i>
+								</span>
+								<div class="desc">
+									<h3>JSP<span style="font-family: 'Quicksand', Arial, sans-serif; font-size:8px;">(Java Server Pages)</span></h3>
+									<p style="padding:0px; margin:0px;">JSP 개념 이해 및 주요 문법 (Expression, Scriptlet, Declaration, Action 등) 사용, <br> Servlet, Bean을 활용하여 MVC 패턴 연계</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-4">
+								<span class="icon">
+									<i class="icon-layers2"></i>
+								</span>
+								<div class="desc">
+									<h3>Board</h3>
+									<p style="padding:0px; margin:0px;"> DB연동 답변형 게시판 구현 경험<br>게시판 글 등록, 리스트, 상세화면, 수정, 삭제, <br>답글화면/답글달기 처리, 첨부파일 처리 가능</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-5">
+								<span class="icon">
+									<i class="icon-time"></i>
+								</span>
+								<div class="desc">
+									<h3>Full Calendar</h3>
+									<p style="padding:0px; margin:0px;">Javascript기반 라이브러리 FullCalendar 활용<br>Ajax, Json데이터 활용하여 DB연동한 스케줄러 구현 가능</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-6">
+								<span class="icon">
+									<i class="icon-mail"></i>
+								</span>
+								<div class="desc">
+									<h3>SMTP Mail Sending</h3>
+									<p style="padding:0px; margin:0px;">웹에서 sedingEmail 함수로 이메일 발송 처리<br> google아이디 사용 수신대상 지정하여 이메일 발송 처리 가능</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
+				<div class="overlay"></div>
+				<div class="colorlib-narrow-content">
+					<div class="row">
+					</div>
+					<div class="row">
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="4" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Mini Projects</span>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="1" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Final Project</span>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="5" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">No. of Team Member</span>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="4" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Programming Language</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="colorlib-skills" data-section="skills">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">My Specialty</span>
+							<h2 style="font-family:  'Quicksand', Arial, sans-serif; ">My Skills</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+							<p>백엔드개발을 기반으로 Java, SQL, Spring framework, Spring boot, Tomcat, API 등의 활용에 집중하였으며, 웹개발 전반을 이해하기 위해 Javascript, HTML, CSS 등 프론트 요소에 대해 학습했습니다. 활용 및 학습의 비중은 아래와 같습니다. </p>
+							<h3 style="font-family: 'Quicksand', Arial, sans-serif; ">Related to Back-End (Total 100%) </h3>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Java</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="30"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:30%">
+								    <span>30% out of 100%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>　　　　　　　　　　　　　　　　　　　　　　　　　　　　Spring MVC, Spring Boot</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="25"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:25%">
+								    <span>25% out of 100%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　JSP</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="25"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:25%">
+								    <span>25% out of 100%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　SQL</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="20"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:20%">
+								    <span>20% out of 100%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+							<br>
+							<h3 style="font-family: 'Quicksand', Arial, sans-serif; ">Related to Front-End (Total 100%) </h3>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Javascript</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="30"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:30%">
+								    <span>30% out of 100%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Ajax, Json</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="30"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:30%">
+								    <span>30% out of 100%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　HTML5</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="20"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:20%">
+								    <span>20% out of 100%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　CSS3</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="20"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:20%">
+								    <span>20% out of 100%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="colorlib-education" data-section="education">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Education</span>
+							<h2 class="colorlib-heading animate-box">Education</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+							<div class="fancy-collapse-panel">
+								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingOne">
+									        <h4 class="panel-title">
+									            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Java기반 스마트 플랫폼 Full-Stack SW개발자 양성 과정 [기간:2021.05.04 ~ 2021.10.26 (총 6개월)] - 쌍용교육센터
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+									         <div class="panel-body">
+									            <div class="row">
+										      		<div class="col-md-2">
+										      			<p>JAVA 프로그래밍</p>
+										      		</div>
+										      		<div class="col-md-10">
+										      			<p>기본문법, 연산자, 제어문, class, String, array, util클래스들 사용(java. util, java. text), JCF(Collection, List,Set, Map),Exception Handling, IOStream, NIO, Thread, Network, 각 버전별 제공 문법들 </p>
+										      		</div>
+										      	</div>
+									            <div class="row">
+										      		<div class="col-md-2">
+										      			<p>데이터베이스<br> 프로그래밍</p>
+										      		</div>
+										      		<div class="col-md-10">
+										      			<p>DML(select, insert, update, delete) , DDL(create, drop, truncate), DCL(commit, rollback , grant, revoke), subquery, join, union, function, constraints, index, sequence, data dictionary, PL/SQL , 기본문법,연산자, 제어문, cursor, 외부변수, accept, exception, table, record, function, procedure, trigger, package  </p>
+													</div>
+										      	</div>
+									            <div class="row">
+										      		<div class="col-md-2">
+										      			<p>JDBC</p>
+										      		</div>
+										      		<div class="col-md-10">
+										      			<p>JDBC연동순서, 각 클래스의 역할, Type별 driver 특징 설명, transaction의 처리방법, Statement, PreparedStatement, CallableStatement사용법, JDBC2.0 scrollable resultset 사용법</p>
+													</div>
+										      	</div>
+									            <div class="row">
+										      		<div class="col-md-2">
+										      			<p>HTML 5</p>
+										      		</div>
+										      		<div class="col-md-10">
+										      			<p>HTML 4.01의 태그, HTML5의 태그 (header, section, article, nav, aside, footer), Symentic tag, audio, video, progress, meter, cite, HTML Form Control(form Attribute-required, placeholder, pattern, autofocus), search, email, url, Phone, numeric, range, color, date, CANVAS ,geo location</p>
+													</div>
+										      	</div>
+									            <div class="row">
+										      		<div class="col-md-2">
+										      			<p> JavaScript / CSS3</p>
+										      		</div>
+										      		<div class="col-md-10">
+										      			<p>기본문법, 연산자, 제어문, function, object(window, document, history,event등), form control validation 방법, DOM요소, JSON, Prototype/CSS3 selector(id, class), opacity, border-radius, gradient(선형,방사형),Transform, Transition, animation </p>
+													</div>
+										      	</div>
+									            <div class="row">
+										      		<div class="col-md-2">
+										      			<p>Servlet / JSP</p>
+										      		</div>
+										      		<div class="col-md-10">
+										      			<p>Web serivce의 이해, Container의 사용법, Java Web Service시 폴더구성, Deployment Descriptor의 역할, servlet작성법, 요청과 응답의 사용(HttpServletRequest, HttpServletResponse), 관계유지 (Http Session, Cookie) ,forwrod, redirect, DBCP의 설정과 사용, JSP tag’s, 내장객체, action tag, EL, JSTL</p>
+										      		</div>
+										      	</div>										      											      											      											   
+									            <div class="row">
+										      		<div class="col-md-2">
+										      			<p>Spring 3.0 / myBATIS / Spring Boot 2.0</p>
+										      		</div>
+										      		<div class="col-md-10">
+										      			<p>iBATIS와 myBATIS의 차이,설정파일 작성법 properties, setting, , typeAliases, typeHanlder, environments, insert, update, delete, select, selectKey, Dynamic 쿼리의 사용, OGNL 사용법,log를 사용한 error 출력, Spring설명, DI(ApplicatoinContext 설정법, Annotation(@Autowired, @Component),AOP(Advice, point cut, before advice, after advice, join point 등),MVC(동작의 개요, annotation, @Controller, @RequestMapping, @ModelAttribute등) 사용법  Spring ORM의 사용 (myBATIS연동)</p>
+										      		</div>
+										      	</div>	
+									            <div class="row">
+										      		<div class="col-md-2">
+										      			<p>Project</p>
+										      		</div>
+										      		<div class="col-md-10">
+										      			<p>주제선정 후 조별 프로젝트 진행 아이템 선정 -> 개발범위설정 -> story board or 화면설계서 작성 -> DB설계 -> Cording -> debug <br>-> 완료 후 시연 </p>
+										      		</div>
+										      	</div>	
+									         </div>
+									    </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="colorlib-blog" data-section="project">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Read</span>
+							<h2 class="colorlib-heading">Recent Projects</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<a href="https://prism-sedum-dff.notion.site/QPMS-4cfb75af33544543bbd377686dcd517e" class="blog-img"><img src="images/qpms.png" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>October 26, 2021 </small> | <small> Web Development </small></span>
+									<h3><a href="https://prism-sedum-dff.notion.site/QPMS-4cfb75af33544543bbd377686dcd517e">QPMS</a></h3>
+									<p>Spring Boot, Thymeleaf 활용 <br>프로젝트 라이프사이클 통합관리 사이트 <br>QPMS (Quality Project Management System) 구현</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<a href="https://prism-sedum-dff.notion.site/4th-Mini-Project-LOVER-S-CUISINE-e430e018c6494cc2b5819b06009b8f0d" class="blog-img"><img src="images/lover'scuisine.png" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>September 17, 2021 </small> | <small> Web Development </small></span>
+									<h3><a href="https://prism-sedum-dff.notion.site/4th-Mini-Project-LOVER-S-CUISINE-e430e018c6494cc2b5819b06009b8f0d">LOVER'S CUISINE</a></h3>
+									<p>DB 설계, Servlet(Controller), JSP(View) 활용 <br> MVC 모델2 구현 중심의 미니프로젝트 <br> 레시피 커뮤니티 Lover's Cuisine 구현</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<a href="https://prism-sedum-dff.notion.site/3rd-Mini-Project-MyOnePick-6ecbd11f709f44939f3b4b1c940d168f" class="blog-img"><img src="images/myonepick.png" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>August 20, 2021 </small> | <small> Web Development </small></span>
+									<h3><a href="https://prism-sedum-dff.notion.site/3rd-Mini-Project-MyOnePick-6ecbd11f709f44939f3b4b1c940d168f">MyOnePick</a></h3>
+									<p>DB 논리 및 물리 설계, Dao와 View(JSP) 연동 및 세션 설정 중심의 미니프로젝트 <br> 크리에이터 디자인템 펀딩사이트 MyOnePick 구현</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<a href="https://prism-sedum-dff.notion.site/2nd-Mini-Project-AllYouCanEat-620ac7cb4374460db6562583ed5b1320" class="blog-img"><img src="images/allyoucaneat.png" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>July 30, 2021 </small> | <small> Web Development </small></span>
+									<h3><a href="https://prism-sedum-dff.notion.site/2nd-Mini-Project-AllYouCanEat-620ac7cb4374460db6562583ed5b1320">AllYouCanEat</a></h3>
+									<p>HTML 화면구현, JSP 활용 및 DB연결<br>중심으로 구현한 미니프로젝트 <br> 맛집추천 및 리뷰사이트 AllYouCanEat 구현</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="blog-entry">
+								<a href="https://prism-sedum-dff.notion.site/1st-Mini-Project-WeWillWork-a556fee05e4f4dec9a114dc7b98020b3" class="blog-img"><img src="images/wewillwork.png" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>July 08, 2021 </small> | <small> Web Development </small></span>
+									<h3><a href="https://prism-sedum-dff.notion.site/1st-Mini-Project-WeWillWork-a556fee05e4f4dec9a114dc7b98020b3">WeWillWork</a></h3>
+									<p>HTML 화면구현을 중심으로 미니프로젝트<br> 잡서칭사이트 WewillWork 구현</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="colorlib-contact" data-section="contact" id="contact">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Get in Touch</span>
+							<h2 class="colorlib-heading">Contact</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-5">
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="icon-globe-outline"></i>
+								</div>
+								<div class="colorlib-text">
+									<p>feelstyo@gmail.com</p>
+								</div>
+							</div>
+
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="icon-map"></i>
+								</div>
+								<div class="colorlib-text">
+									<p>대한민국 서울시 광진구</p>
+								</div>
+							</div>
+
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="icon-linkedin2"><a href="https://www.linkedin.com/in/yoora-kwon-36ab64141/"></a></i>
+								</div>
+								<div class="colorlib-text">
+									<p><a href="https://www.linkedin.com/in/yoora-kwon-36ab64141/">https://www.linkedin.com/in/yoora-kwon-36ab64141/</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-7 col-md-push-1">
+							<div class="row">
+								<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
+									<form id="contact_frm" action="/insert" method="get">
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Name" name="name" id="name">
+										</div>
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Email" name="email" id="email">
+										</div>
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Subject" name="subject" id="subject">
+										</div>
+										<div class="form-group">
+											<textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+										</div>
+										<div class="form-group">
+											<input type="button" class="btn btn-primary btn-send-message" value="Send Message" id="sendBtn">
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div><!-- end:colorlib-main -->
+	</div><!-- end:container-wrap -->
+	</div><!-- end:colorlib-page -->
+
+
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+	
+	
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+	<script>
+
+	$("#sendBtn").click(function(){
+		if ($("#name").val()=='') {
+			alert("이름을 입력해주세요");
+		}else if ($("#email").val()=='') {
+			alert("이메일을 입력해주세요");			
+		}else if ($("#subject").val()==''){
+			alert("제목을 입력해주세요");
+		}else if (confirm("메세지를 보내시겠습니까??")){
+			$("#contact_frm").submit(); 
+		}
+	});	
+
+	function download () {
+		location.href="/download";
+	};
+	</script>
+
+	</body>
+</html>
+
